@@ -23,8 +23,11 @@ btns.forEach(btn => {
 });
 function CheckWinner(buttons){
     const winConditions = [[0,1,2],[3,4,5],[6,7,8],[0,3,6],[1,4,7],[2,5,8],[0,4,8],[2,4,6]]
-    for(let i = 0;i<winConditions.length;i++){
-
+    for(let condition of winConditions){
+        const [a,b,c] = condition;
+        if(buttons[a].innerHTML!==""&&buttons[a].innerHTML===buttons[b].innerHTML&&buttons[b].innerHTML===buttons[c].innerHTML){
+            alert(`Player ${buttons[a].innerHTML} Wins!`)//TODO: Make this not bad
+        }
     }
 }
 
