@@ -1,0 +1,19 @@
+*{
+    padding:0;
+    margin:0;
+}
+body{
+    background-color: rgb(35, 39, 28);
+}
+.grid{
+    background-color: wheat;
+    width: 50%;
+    height:50vw;
+    min-width: 250px;
+    min-height: 250px;
+    max-width:600px;
+    max-height: 600px;
+    margin:20vh auto;
+    display: grid;
+    
+}
